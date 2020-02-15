@@ -1,0 +1,7 @@
+!searches!
+- the simplest search type called linear search is from left to right the checking of every element for the desired element.
+- in some situations this is the best we can do, especially if the data is unsorted.
+- Binary search:
+- must faster than searching in a linear manner.
+- relies upon the array being sorted.
+- 

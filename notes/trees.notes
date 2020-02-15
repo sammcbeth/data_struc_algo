@@ -1,0 +1,20 @@
+!trees!
+- define what a tree is 
+- compare and contrast trees and lists
+- explain the difference between trees biinary trees and binary search trees
+- implement operations on binery search trees
+- trees:
+    - root node must be at the top and all lower nodes must be linked directly to it 
+    - basic trees have nodes that have any number of branch nodes.
+    - !Lists are linear / Trees are nonLinear
+    - singly linked list a special case of a tree
+    - can only have one entry point/beginning
+    - 
+- binary search Trees:
+    - at most have two nodes for each parent node
+    - defined as left and right nodes.
+    - every item that is less than a parent node is located to the left of it
+    - every item that is greater than a parent node is located to the right of it.
+    - 
+- binary trees:
+    - same as above besides the fact that the left and right child nodes dont need to have any particular > < relationship with the parent nodes.

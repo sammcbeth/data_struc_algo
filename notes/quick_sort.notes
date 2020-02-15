@@ -1,0 +1,10 @@
+!quick sort!
+- in order to implement quic sort its sueful to first implement a function responsible arranging elements in an array on either side of a pivot
+- given an array this helper function should designate an elements as the pivot
+- it should then rearrange elements in the array so that all values less than the pivot are moved to the left of the pivot and all values greater than the pivot are moved to the right of the pivot
+- the order of elements on either side of the pivot doesnt matter.
+- the helpoer should do this in place that is it should not create a new array.
+- when complete the helper should return the index of the pivot.
+- the runtime of quick sort depends in part on how one selects the pivot
+- ideally the pivot should be the median but this is impossible
+- we'll pick the first element.

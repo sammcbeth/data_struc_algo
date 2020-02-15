@@ -1,0 +1,15 @@
+!Merge sort!
+- obviously much faster, i believe its n(log base 2 of n) tim complexity
+- its a combinationof two things merging and sorting
+- explots the fact that arrays of 0 or 1 element are always sorted
+- works be decomposing an array into smaller arrays of 0 or 1 elements then building up a newly sorted array.
+- break up the alrge array into arrays of one element each. then at each step merge those arrays once into arrays double the size of the arrays at the beginning of the step.
+- this is where the logarithmic complexity comes from.
+- Build the call stack:
+    - build the call stack starting with the base array until you get down to nothing but single value arrays.
+    - return the single value array and fill in the merges on the way back up with all sorted arrays. 
+    - based on the idea that a single valued array is always sorted.
+    - the splitting on the way down takes logn times to split down to single value arrays.
+    - the comparisoons on the way back up looks at each value once
+    - therefor for logn splits we have n comparisons thus nlogn complexity.
+    -
