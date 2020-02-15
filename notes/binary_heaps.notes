@@ -1,0 +1,14 @@
+!binary heaps!
+- max binary heap:
+    - each parent has at most two child nodes
+    - the value of each parent node is always greater than its child nodes
+    - in a max binary heap the parent is greater than the childeren but there are noguarentees between sibling nodes
+    - a binary heap is as compact as possible.
+    - all the childrenof eachnode are as afull as they can be and left children are filled out first
+- min binary heap:
+    - same concept as above max binary heap but all child nodes are greater than their parent node.
+- Binary heaps are used to implement priority queues which are very commonly used data structures.
+- also used a fair amount with graph traversal algorithms.
+- binary heaps are very useful data structures for sorting and implementing other data structures such as priority queues
+- binary heaps are either macbinary heaps or minbinaryheaps with parents either being smaller or larger than their children
+- with just a little bit of math we can represent heaps using arrays.

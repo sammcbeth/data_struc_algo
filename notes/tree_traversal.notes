@@ -2,7 +2,19 @@
 - how do we visit every node one time.
 - breadth first search:
     - starting at left and working across the tree.
+    - visiting all nodes within a certain level of a tree.
+    - then moving downwards
+    - 
 - depth first search:
-    - in order
-    - pre order
-    - post order
+    - in order:
+        
+    - pre order:
+        - vist node
+        - traverse left
+        - traverse right
+        - same order for every node
+    - post order:
+        - travers the left
+        - traverse the right
+        - visit node
+    

@@ -65,6 +65,7 @@ class PriorityQueue:
                     else:
                         return self
         bubbleUp()
+        return max
 
 
 
@@ -87,16 +88,22 @@ this.enqueue('jeff',55)
 this.print()
 this.enqueue('max',41)
 this.print()
-this.dequeue()
-this.print()
-this.dequeue()
-this.print()
-this.dequeue()
-this.print()
-this.dequeue()
-this.print()
-this.dequeue()
-this.print()
-this.dequeue()
-this.print()
+print(this.dequeue().priority)
+print(this.dequeue().priority)
+print(this.dequeue().priority)
+print(this.dequeue().priority)
+print(this.dequeue().priority)
+print(this.dequeue().priority)
+
+# this.print()
+# this.dequeue()
+# this.print()
+# this.dequeue()
+# this.print()
+# this.dequeue()
+# this.print()
+# this.dequeue()
+# this.print()
+# this.dequeue()
+# this.print()
 
