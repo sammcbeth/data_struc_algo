@@ -1,0 +1,3 @@
+!Graph!
+- a graph data structure consists of a finite and possibly mutablee set of vertices or nodes or points together witha  set of unordered pairs of these vertices for an unfirected graph or a set of ordered pairs for a directed graph.
+- nodes and connections between those nodes regardless of direction

@@ -1,0 +1,20 @@
+!Hash Tables!
+- built into every programming language
+- hash tables are used to store key value pairs
+- the keys in a hash table are not ordered
+- in order to look up values by key we need a way ot convert keys into valid array indices
+- a function that performs this taks is called a hash function
+- what makes a good hash function:
+    - fast ie constant time
+    - doesnt cluster outputs at specific indices but distributes uniformly
+    - deterministic same input yields same outputs
+- Dealing with collisions:
+    - even with a large array and great hash fucntion collisions are inevitable
+    - there are many strategies but well focus on two.
+        - seperate chaining:
+            - at each index in our array we store values using a more sohisticated data structure
+            - this allows for multiple key value pairs at the same postion
+        - linear probing:
+            - when we find a collision we search through the array to find the next empty slot
+            - this allows for all unique storages.
+            
