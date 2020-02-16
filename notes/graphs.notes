@@ -1,3 +1,32 @@
 !Graph!
 - a graph data structure consists of a finite and possibly mutablee set of vertices or nodes or points together witha  set of unordered pairs of these vertices for an unfirected graph or a set of ordered pairs for a directed graph.
 - nodes and connections between those nodes regardless of direction
+- vertex = node
+- edge = connection
+- a tree is a graph in which there is only one path from a to b 
+- connections are two way connections in undirected graphs.
+- connections are one way binding in directed graphs
+- weighted graph is when the edges have values
+- Adjency Matrix:
+    - NxN matrix where every N vertex has a reference to every other N vertex on whether or not they are connected
+    - takes up more space
+    - slower to iterate over all edges
+    - fast to lookup specific edge
+    - add vertex: V^2
+    - remove vertex: V^2
+    - search: 1
+    - storage: V^2
+    - add edge: 1
+    - remove edge: 1
+- Adjency List:
+    - use a list to store the edges of each vertex
+    - use a hash table to store the connections of each vertex
+    - can take up less space in sparce graphs
+    - faster to iterate over all edges
+    - can be slower to lookup specific edge
+    - add vertex: 1
+    - remove vertex: V + E
+    - search: V + E
+    - storage: V + E
+    - add edge: 1 
+    - remove edge: V + E
