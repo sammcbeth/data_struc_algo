@@ -1,0 +1,5 @@
+!Graph Traversal!
+- visiting/updating/checking each vertex in a Graph
+- for any node in a grqph theres no gaurentee that there is one unique path
+- finding most similar objects based on closeness of distance
+- 
