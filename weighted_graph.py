@@ -26,7 +26,7 @@ class WeightedGraph:
                 distances[val] = 99999999999
                 nodes.enqueue(val, 99999999999)
             previous[val] = None
-        while len(nodes.values):
+        while len(nodes):
             smallest = nodes.dequeue().val
             if smallest == finish:
                 while previous[smallest]:
@@ -36,7 +36,9 @@ class WeightedGraph:
                 break
             if smallest or distances[smallest] != 99999999999:
                 for neighbor in self.edgeList[smallest]:
-                    
+                    # print(distances)
+                    # print(previous)
+                    nodes.print()
                     candidate = distances[smallest] + neighbor['weight']
                     if candidate < distances[neighbor['node']]:
                         distances[neighbor['node']] = candidate
