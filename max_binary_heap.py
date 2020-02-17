@@ -1,8 +1,8 @@
 class Node:
-    def __init__(self, val):
+    def __init__(self, val, priority):
         self.val = val
-        self.left = None
-        self.right = None
+        self.priority = priority
+        
 
 class MaxBinaryHeap:
 
@@ -10,7 +10,7 @@ class MaxBinaryHeap:
         self.values = []
         self.length = 0
     
-    def insert(self, val):
+    def enqueue(self, val):
         newNode = Node(val)
         if self.length == 0:
             self.values.append(newNode)
@@ -21,7 +21,7 @@ class MaxBinaryHeap:
         n = self.length -1
        
         while n > 0:
-            if self.values[n].val > self.values[(n-1)//2].val:
+            if self.values[n].val < self.values[(n-1)//2].val:
                 self.values[n].val, self.values[(n-1)//2].val = self.values[(n-1)//2].val,self.values[n].val
                 n = (n-1)//2
             else:
@@ -33,7 +33,7 @@ class MaxBinaryHeap:
             arr.append(val.val)
         print(arr)
 
-    def extract_max(self):
+    def dequeue(self):
         n = 0
         self.values[n].val, self.values[self.length - 1].val = self.values[self.length - 1].val, self.values[n].val
         max = self.values.pop()
@@ -44,17 +44,17 @@ class MaxBinaryHeap:
             while 2*n + 1 < self.length:
                 
                 if 2*n + 2 == self.length:
-                    if self.values[n].val < self.values[2*n + 1].val:
+                    if self.values[n].val > self.values[2*n + 1].val:
                         self.values[n].val, self.values[2*n + 1].val = self.values[2*n + 1].val,self.values[n].val
                         return self
                     else:
                         return self
-                elif self.values[2*n + 1].val < self.values[2*n + 2].val:
-                    if self.values[n].val < self.values[2*n + 2].val:
+                elif self.values[2*n + 1].val > self.values[2*n + 2].val:
+                    if self.values[n].val > self.values[2*n + 2].val:
                         self.values[n].val, self.values[2*n + 2].val = self.values[2*n + 2].val,self.values[n].val
                         n = 2*n + 2
                 else:
-                    if self.values[n].val < self.values[2*n + 1].val:
+                    if self.values[n].val > self.values[2*n + 1].val:
                         self.values[n].val, self.values[2*n + 1].val = self.values[2*n + 1].val,self.values[n].val
                         n = 2*n + 1
                     else:
@@ -65,33 +65,33 @@ class MaxBinaryHeap:
 
 
 this = MaxBinaryHeap()
-this.insert(18)
+this.enqueue(18)
 this.print()
-this.insert(27)
+this.enqueue(27)
 this.print()
-this.insert(12)
+this.enqueue(12)
 
 this.print()
-this.insert(33)
+this.enqueue(33)
 this.print()
-this.insert(39)
+this.enqueue(39)
 
 
 this.print()
-this.insert(55)
+this.enqueue(55)
 this.print()
-this.insert(41)
+this.enqueue(41)
 this.print()
-this.extract_max()
+this.dequeue()
 this.print()
-this.extract_max()
+this.dequeue()
 this.print()
-this.extract_max()
+this.dequeue()
 this.print()
-this.extract_max()
+this.dequeue()
 this.print()
-this.extract_max()
+this.dequeue()
 this.print()
-this.extract_max()
+this.dequeue()
 this.print()
 

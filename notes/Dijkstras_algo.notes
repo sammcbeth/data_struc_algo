@@ -1,4 +1,8 @@
 !Dijkstras algorithm!
 - implement a weighted graph
 - walk though the streps of algorithm
+- Every time we look to visit a new node we pick the node with the smallest known distance tovisit first
+- once weve moved to the node were going to visit we look at each of its neighbors
+- for each neighboring node we calculate the distance by summing the total edges that lead to the node were checking from the starting node
+- if the new total distance to a node is less that the previous total we store the new shorter distance for that node.
 - 

@@ -95,6 +95,7 @@ print(this.dequeue().priority)
 print(this.dequeue().priority)
 print(this.dequeue().priority)
 
+
 # this.print()
 # this.dequeue()
 # this.print()
